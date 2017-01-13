@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+      <ion-item>
+        <div *ngIf="uid">uid: {{uid}}</div>
+      </ion-item>
+      <ion-item>
+        <div *ngIf="uid">Name: {{name}}</div>
+      </ion-item>
+      <ion-item>
+        <button ion-button full (click)="logout()">Logout</button>
+      </ion-item>
+    </ion-list>
+</ion-content>
+
+
